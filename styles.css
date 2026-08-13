@@ -47,7 +47,7 @@ html{
  background-position: center;
  position: relative;
    animation: backgroundSlide 15s infinite;
-   /*this style is for the body section of the website to make the content of the page */
+
 }
 .container-body::before {
   content: "";

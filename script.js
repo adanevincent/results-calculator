@@ -319,6 +319,35 @@ else {
     `;
 }
 });
+/*GENERATING OPTIONS FOR  SELECTECT ELEMENT  */ 
+
+
+const optionsGenerator=(subject)=>{
+    for(let optionToGenerate=1; optionToGenerate<=9; optionToGenerate++){
+
+        let optionToGenerateElement=document.createElement("option");
+
+        optionToGenerateElement.value=optionToGenerate;
+
+            optionToGenerateElement.textContent=optionToGenerate;
+
+            subject.appendChild(optionToGenerateElement)
+    }
+
+}
+
+/*Calling fubctiong for each select subject*/
+optionsGenerator(english);
+optionsGenerator(mathematics);
+optionsGenerator(integratedScience);
+optionsGenerator(socialStudies);
+optionsGenerator(computing);
+optionsGenerator(careerTechnology);
+optionsGenerator(creativeArts);
+optionsGenerator(religiousMoralEducation);
+optionsGenerator(physicalHealthEducation);
+optionsGenerator(ghanaianLanguage);
+optionsGenerator(french);
 
 
 
