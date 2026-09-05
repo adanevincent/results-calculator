@@ -175,8 +175,7 @@ schoolQualify.addEventListener("click",function(){
 
 if(total===0)
     {
-            schoolCont.innerHTML = `<p>Please select or enter your grades.</p>`;
-        return;
+           
  
  if (total >= 6 && total <= 9) {
     schoolCont.innerHTML = `
