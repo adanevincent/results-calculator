@@ -172,7 +172,13 @@ const schoolQualify=document.getElementById('schoolQuaification');
 const schoolCont=document.getElementById("school-qualify-container");
 
 schoolQualify.addEventListener("click",function(){
-if (total >= 6 && total <= 9) {
+
+if(total===0)
+    {
+            schoolCont.innerHTML = `<p>Please select or enter your grades.</p>`;
+        return;
+ 
+ if (total >= 6 && total <= 9) {
     schoolCont.innerHTML = `
         <h3>Schools to Consider</h3>
 
@@ -318,6 +324,9 @@ else {
         </small>
     `;
 }
+
+}    
+
 });
 /*GENERATING OPTIONS FOR  SELECTECT ELEMENT  */ 
 
